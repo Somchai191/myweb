@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-mali: 'Mali', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,13 +16,36 @@
 }
 
 body {
+  background: linear-gradient(-45deg, #2193b0, #6dd5ed, #ff9966, #ff5e62);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mali);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes soft-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* เด้งขึ้นเล็กนิดเดียว */
+  }
+}
+
+.animate-soft-bounce {
+  animation: soft-bounce 3s ease-in-out infinite;
 }
