@@ -3,9 +3,11 @@ import Image from "next/image";
 export default function ProfileImage({ isVisible }) {
   return (
     <div
-      className={`w-40 h-40 sm:w-[400px] sm:h-[400px] rounded-full overflow-hidden flex items-center justify-center bg-gray-200 transition-transform duration-1500 ease-out ${
-        isVisible ? "translate-x-0" : "-translate-x-full"
-      }`}
+      className={`w-72 h-72 sm:w-[400px] sm:h-[400px] 
+                  rounded-full overflow-hidden 
+                  flex items-center justify-center bg-gray-200 
+                  transition-transform duration-1500 ease-out 
+                  ${isVisible ? "translate-x-0" : "-translate-x-full"}`}
     >
       <Image
         src="/my.jpg"
