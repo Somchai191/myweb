@@ -18,3 +18,4 @@ export default function ProfileImage({ isVisible }) {
     </div>
   );
 }
+
