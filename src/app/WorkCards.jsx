@@ -1,7 +1,7 @@
 // WorkCards.js
 import React, { useState } from "react";
 import WorkCardItem from "./card/card1";
-import Modal from "./card/modal"; // ปรับ path ถ้าอยู่ในโฟลเดอร์อื่น
+import Modal from "./card/modal"; // ปรับ path ตามโครงสร้างไฟล์จริงของคุณ
 
 export default function WorkCards({ isScrolled }) {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function WorkCards({ isScrolled }) {
     <div className="flex flex-col gap-8 mt-8">
       {/* แถวแรก */}
       <div
-        className={`flex gap-8 transition-transform duration-[2000ms] ease-out ${
+        className={`flex flex-col sm:flex-row gap-8 transition-transform duration-[2000ms] ease-out ${
           isScrolled ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -37,7 +37,7 @@ export default function WorkCards({ isScrolled }) {
 
       {/* แถวที่สอง */}
       <div
-        className={`flex gap-8 transition-transform duration-[1500ms] ease-out ${
+        className={`flex flex-col sm:flex-row gap-8 transition-transform duration-[1500ms] ease-out ${
           isScrolled ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -66,11 +66,10 @@ export default function WorkCards({ isScrolled }) {
       {isModalOpen && (
         <Modal
           title="Certificate เกียรติบัตร"
-          images={["/c1.png", "/c2.png", "/c3.png"]} 
+          images={["/c1.png", "/c2.png", "/c3.png"]}
           onClose={() => setModalOpen(false)}
         />
       )}
-
     </div>
   );
 }
