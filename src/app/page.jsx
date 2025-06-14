@@ -33,18 +33,18 @@ export default function Home() {
           <ProfileImage isVisible={isVisible} />
 
           {/* ข้อความโปรไฟล์ */}
-          <div
-            className={`flex-1 p-6 bg-white rounded-[10px] shadow-lg transition-transform duration-1500 ease-out ${
-              isVisible ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <h1 className="text-4xl font-bold font-mali">
-              MR.Somchai Manhoeng
-            </h1>
-            <p className="text-gray-600 mt-2 font-mali">
-              สวัสดีครับ กระผมนายสมชาย หมั่นเฮิง
-            </p>
-          </div>
+            <div
+              className={`flex-1 p-4 sm:p-6 bg-white rounded-[10px] shadow-lg transition-transform duration-1500 ease-out ${
+                isVisible ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <h1 className="text-2xl sm:text-4xl font-bold font-mali">
+                MR.Somchai Manhoeng
+              </h1>
+              <p className="text-sm sm:text-base text-gray-600 mt-2 font-mali">
+                สวัสดีครับ กระผมนายสมชาย หมั่นเฮิง
+              </p>
+            </div>
         </main>
 
         {/* ปุ่ม 4 ปุ่ม */}
