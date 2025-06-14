@@ -8,22 +8,21 @@ export default function WorkCardItem({
 }) {
   const cardContent = (
     <div
-      className="w-[400px] h-[500px] bg-white rounded-[10px] shadow-md transition-all duration-50 transform hover:scale-105 p-4 flex flex-col items-center cursor-pointer"
+      className="w-full max-w-[400px] sm:w-[400px] h-[420px] sm:h-[500px] bg-white rounded-[10px] shadow-md transition-all duration-50 transform hover:scale-105 p-4 flex flex-col items-center cursor-pointer"
       onClick={onClick}
     >
       <img
         src={imageSrc}
         alt={title}
-        className={`w-full h-[320px] object-cover rounded-md mb-4 ${bounce ? "animate-soft-bounce" : ""}`}
+        className={`w-full h-[260px] sm:h-[320px] object-cover rounded-md mb-4 ${bounce ? "animate-soft-bounce" : ""}`}
       />
-      <p className="text-center text-gray-800 font-bold text-xl">{title}</p>
+      <p className="text-center text-gray-800 font-bold text-lg sm:text-xl">{title}</p>
       {detal && (
-        <p className="text-center text-gray-600 text-sm mt-2">{detal}</p>
+        <p className="text-center text-gray-600 text-xs sm:text-sm mt-2">{detal}</p>
       )}
     </div>
   );
 
-  // ✅ ถ้ามี link และไม่มี onClick → ใช้ <a>
   if (link && !onClick) {
     return (
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -32,7 +31,5 @@ export default function WorkCardItem({
     );
   }
 
-  // ✅ ถ้าไม่มี link หรือต้องใช้ onClick → ใช้ div ปกติ
   return cardContent;
 }
-
