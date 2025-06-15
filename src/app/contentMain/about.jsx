@@ -12,7 +12,7 @@ export default function About({ isScrolled }) {
                     ${isScrolled ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
       >
         <Image
-          src="/my.jpg"
+          src="/56361.jpg"
           alt="Profile Image"
           width={500}
           height={500}
