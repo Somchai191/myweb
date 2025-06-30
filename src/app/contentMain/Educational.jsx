@@ -14,7 +14,6 @@ export default function Educational() {
             <p>ชั้นมัธยมศึกษา ม.1-3</p>
             <p>สาย ศิลป์-คำนวน</p>
           <h2 className="text-xl font-bold mt-4 font-mali">โรงเรียนพระปริยัติธรรมวัดพระบ้านอุดม</h2>
-          <h2 className="text-xl font-bold">GDP:2.91</h2>
         </div>
       </div>
       {/* Right Side */}
@@ -26,7 +25,6 @@ export default function Educational() {
             <p>ชั้นมัธยมศึกษา ม.4-6</p>
             <p>สาย ศิลป์-คำนวน</p>
           <h2 className="text-xl font-bold mt-4 font-mali">โรงเรียนพระปริยัติธรรมวัดป่าไม้แดง</h2>
-          <h2 className="text-xl font-bold">GDP:3.43</h2>
         </div>
       </div>
       {/* Right Side */}
@@ -38,7 +36,6 @@ export default function Educational() {
             <p>ระดับชั้น ปี 1-4</p>
             <p>บริหารธุรกิจและศิลปศาสตร์ สาขา ระบบสารสนเทศทางธุรกิจ - การพัฒนาซอฟต์แวร์ทางธุรกิจ</p>
           <h2 className="text-xl font-bold mt-4 font-mali">มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา เชียงใหม่</h2>
-          <h2 className="text-xl font-bold">GDP:2.97</h2>
         </div>
       </div>
     </div>
